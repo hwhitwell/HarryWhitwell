@@ -9,7 +9,13 @@
  * @license   https://themeforest.net/licenses/standard
  *
  */
-            
+
+ #example1 {
+    background-image: url(./assets/images/logo/logo.png);
+    background-repeat: no-repeat;
+    padding: 15px;
+ }
+ 
 
 .breadcrumb {
     text-transform: capitalize;
@@ -4098,7 +4104,7 @@ textarea:not([rows]),
 }
 
 .heading-title.style-1 {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .title:not(:last-child), .heading-title:not(:last-child),
