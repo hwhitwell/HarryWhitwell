@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Harry Whitwell" content="Research">
-    <meta name="description" content="Dr Harry Whitwell - Protein methylation research">
-    <meta name="keywords" content="Dr Harry Whitwell, Harry Whitwell, proteomics, mass spectrometry, PTM, protein methylation, enrichment, methylation, cancer">
-    <title>Harry Whitwell | Methylation</title>
+    <meta name="description" content="Dr Harry Whitwell - Research Interests">
+    <meta name="keywords" content="Dr Harry Whitwell, Harry Whitwell, proteomics, mass spectrometry, PTM, protein methylation, enrichment, methylation, cancer, synolitic, parenclitic, network, analysis, data analysis">
+    <title>Harry Whitwell | Research Interests</title>
     <link rel="stylesheet" href="../assets/css/vendor.min.css?v=1557271717550">
     <link rel="stylesheet" href="../assets/css/styles.min.css?v=1557271717550">
     <link rel="stylesheet" href="../assets/css/custom.css?v=1557271717550">
@@ -94,10 +94,10 @@
         <div id="header-bottom" class="site-header-bottom">
           <div id="header-bottom-inner" class="site-header-bottom-inner ">
             <section class="section is-clearfix">
-              <div class="ken-burns-background" style="background-image:url(../assets/images/portfolio/enrichment_header.png"></div>
+              <div class="ken-burns-background" style="background-image:url(../assets/images/portfolio/parenclitic_header.png"></div>
               <div class="container">
                 <div class="intro-text has-text-centered">
-                  <h1>Protein Methylation</h1>
+                  <h1>Research Interests</h1>
                 </div>
               </div>
             </section>
@@ -159,6 +159,64 @@
           </section>
           <!-- Lay person banner END -->
             
+                    <!-- Mass Spec START -->
+                    <section id="MS" class="section introduction is-clearfix">
+                      <div class="columns is-variable is-8 is-multiline">
+                        <div class="column is-6-desktop is-12-tablet has-text-centered">
+                        <div class="works-latest">
+                          <div class="works-latest-item">
+                            <img alt="Mass spectra" src="../assets/images/portfolio/HiLight.png">
+                          </div>
+                            <!-- .works-latest-item -->
+                        </div>
+                        </div>
+                        <div class="column is-6-desktop is-12-tablet" data-aos="fade-left">
+                        <p class="heading-title-top">Data analysis</p>
+                        <h1 class="heading-title has-text-left">Mass Spectrometry</h1>
+                        <p>We use R to code our own bespoke data analysis tools for mass spectrometry data files. Recently, we <a href="../pages/publication.html#highlight" target="_blank">published</a> a tool, <a href="https://harrywhitwell.shinyapps.io/hilight-ptm/" target="_blank">HiLight-PTM</a> that highlights <i>m/z</i> peaks from peptide fragmentation (MS/MS) spectra that have matching masses, and those which have a predictable mass-shift owing to the incorporation of an isotopic label. Using this tool, we can extract pairs of MS/MS spectra that contain correlative fragments. Coupled to this, we use retention-time matching and compare the ratio of precursor isotopic peaks to match heavy/light peptide at both the MS1 and MS2 level. By doing this, we can interrogate when standard database searching fails (e.g. owing to poor fragmentation scans from co-isolation or low intensity). We also use experimental fragmentation matching to <i>in silico</i> fragment ions independant of precursor mass. In this way, we attempt to identify MS2 scans with unknown modifications or alterations to their primary sequence.</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Mass Spec END -->
+          
+                    <!-- Parenclitic START -->
+                    <section id="parenclitic" class="section introduction is-clearfix">
+                      <div class="columns is-variable is-8 is-multiline">
+                        <div class="column is-6-desktop is-12-tablet" data-aos="fade-right">
+                      <p class="heading-title-top">Data Analyis</p>
+                      <h1 class="heading-title has-text-left">Parenclitic Network Analysis</h1>
+                      <p>Parenclitic networks are networks of differences between two populations or between an individual and a population. First described by Zanin (2014), we have adopted them to better-suit biological data. The networks are constructed by performing comparisons of all pairs of analytes within in a dataset. A 2 dimensional kernel density estimatation is constructed for each pair in a control population and the density at which the same pair of analytes in a test population or individual lies within the control population is determined. If the density is above a threshold, then this relationship is plotted within a graph structure (network). With <a href="https://www.ucl.ac.uk/~rmjbale/con.html/zaikin.html" target="_blank">Prof Zaikin</a> and <a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=JTIMM43" target="_blank">Dr John Timms</a> (UCL), we have used the topology (shape) of these networks to <a href="../pages/publication.html#parenclitic" target="_blank">predict ovarian cancer</a> and inform on early biological events in the pathogenesis of this disease. We have recently been awarded an MRC/NIHR methodological development grant to explore the applications of parenclitic networks and combine them with deep learning and machine learning approaches for disease prediction. We have a number of collaborations regarding the use of parenclitic networks (e.g. <a href="../pages/publication.html#aging" target="_blank">aging</a>), and are happy to share code and explain their benefits further.</p>
+                        </div>
+                        <div class="column is-6-desktop is-12-tablet has-text-centered">
+                          <div class="works-latest">
+                            <div class="works-latest-item">
+                              <img alt="parenclitic" src="../assets/images/portfolio/parenclitic.jpg">
+                            </div>
+                            <!-- .works-latest-item -->
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Parenclitic END -->
+          
+                    <!-- Longitudinal START -->
+                    <section id="longitudinal" class="section introduction is-clearfix">
+                        <div class="columns is-variable is-8 is-multiline">
+                          <div class="column is-6-desktop is-12-tablet has-text-centered">
+                            <div class="works-latest">
+                              <div class="works-latest-item">
+                                <img alt="longitudinal" src="../assets/images/portfolio/longitudinal.png"> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column is-6-desktop is-12-tablet" data-aos="fade-left">
+                            <p class="heading-title-top">Data Analysis</p>
+                            <h1 class="heading-title has-text-left">Londitudinal Analysis</h1>
+                            <p>Standard biomarker tests use a fixed threshold at which a biomarker signifies disease. This threshold is calibrated against a population to give the optimal ratio of false positives to false negatives. Many biomarkers naturally vary in concentration in healthy individuals such that individuals with a naturally low abundance of a biomarkers may not be diagnosed if the marker doesn’t increase above threshold with the onset of disease (and <i>vice-versa</i>). Longitudinal algorithms that can use screening data are able to circumvent this problem by identifying changes in an individuals’ baseline (i.e. a rate of change). For example, we have developed a number of <a href="../pages/publication.html#longitundinal" target="_blank">longitudinal algorithms</a> able to identify ovarian cancer from screening data with improved sensitivity/specificity over threshold models. In collaboration with <a href="https://www.linkedin.com/in/oleg-blyuss-a0a71a47/?locale=en_US" target="_blank">Dr Blyuss</a>, I am exploring the application of these techniques in other fields, such as changes to protein expression over the cell cycle and longitudinal market data.</p>
+                          </div>
+                        </div>
+                    </section>
+                    <!-- Longitudinal END -->
         </div>
         <!-- #content-area -->
       </div>
