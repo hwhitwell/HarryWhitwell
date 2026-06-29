@@ -34,6 +34,62 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../assets/images/myFavicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+<style>
+  /* Force nav menu open on posters page only */
+  #site-navigation {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Hide hamburger button */
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  /* Make level-right a flexbox so nav and hamburger sit side by side */
+  .level-right {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex: 1 !important;
+  }
+
+  /* Make nav-wrap take up available space */
+  #nav-wrap {
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex: 1 !important;
+  }
+
+  /* Horizontal menu items */
+  #main-header-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #main-header-menu li {
+    font-size: 17px !important;
+    letter-spacing: 0 !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  #main-header-menu li a {
+    display: block !important;
+    color: #000000 !important;
+    padding: 14px 18px !important;
+    margin: 18px 0 !important;
+  }
+
+  #main-header-menu li a:hover {
+    color: #F5104E !important;
+  }
+</style>
   </head>
 
   <body class="active-pageloader creative header-hamburger-menu slide-up footer-widgets footer-background light-color widgets-6 footer-reveal submenu-show-arrow-right menu-is-capitalized submenu-is-capitalized logo-text-is-capitalized page-index page-header-hamburger-menu">
@@ -60,10 +116,10 @@
                   <nav id="site-navigation" class="main-navigation right">
                     <ul id="main-header-menu" class="menu">
                       <li>
-                        <a href="../index.html">home</a>
+                        <a href="#Harry">Harry's</a>
                       </li>
                       <li>
-                        <a href="#Harry">Harry's</a>
+                        <a href="#Leyla">Leyla's</a>
                       </li>
                       <li>
                         <a href="#Brittannie">Brittannie's</a>
@@ -75,7 +131,7 @@
                         <a href="#Rayan">Rayan's</a>
                       </li>
                       <li>
-                        <a href="../index.html#contact">Contact</a>
+                        <a href="../index.html">home</a>
                       </li>
                     </ul>
                   </nav>
@@ -119,7 +175,7 @@
         <div id="content-area" class="site-content-area">
 
           <!-- Lay person banner START-->
-          <section class="section has-background-secondary is-clearfix">
+          <!-- <section class="section has-background-secondary is-clearfix">
             <div class="container">
               <div class="media-content">
                 <h3 class="has-text-white has-text-centered">
@@ -127,53 +183,55 @@
                 </h3>
               </div>
             </div>
-          </section>
+          </section> -->
           <!-- Lay person banner END -->
 
-          <!-- Harry START -->
-          <section id="Harry" class="section introduction is-clearfix">
-            <div class="columns is-variable is-8 is-multiline">
-              <div class="column is-12-desktop is-12-tablet">
+          <!-- Harry and Leyla START -->
+          <section class="section introduction is-clearfix">
+            <div class="columns is-variable is-12 is-multiline">
+              <div id="Harry" class="column is-6-desktop is-6-tablet">
                 <h1 class="heading-title has-text-left">Harry's Posters</h1>
                 <p><a href="AdditionalPages/2025_BSPRPoster.pdf", target="_blank">BSPR 2025: MZCal</a>
-                <br>Brittannie Willis; Harry J Whitwell<hr></p>
+                <br>Brittannie Willis; Harry J Whitwell<hr>
+                </p>
+              </div>
+              <div id="Leyla" class="column is-6-desktop is-6-tablet">
+                <h1 class="heading-title has-text-left">Leyla's Posters</h1>
+                <!-- <p><a href="AdditionalPages/2025_BSPRPoster.pdf", target="_blank">BSPR 2025: MZCal</a>
+                <br>Brittannie Willis; Harry J Whitwell<hr>
+                </p> -->
               </div>
             </div>
           </section>
-          <!-- Harry End END --> 
+          <!-- Harry and Leyla END --> 
 
-          <!-- Brittannie Start -->
-          <section id="Brittannie" class="section introduction is-clearfix">
-            <div class="columns is-variable is-8 is-multiline">
-              <div class="column is-12-desktop is-12-tablet">
+          <!-- Brittannie and Shahid Start -->
+          <section class="section introduction is-clearfix">
+            <div class="columns is-variable is-12 is-multiline">
+              <div id="Brittannie" class="column is-6-desktop is-6-tablet">
                 <h1 class="heading-title has-text-left">Brittannie's Posters</h1>
                 <p><a href="AdditionalPages/2024_BMSS.pdf", target="_blank">BMSS 2024: Brain Tissue Profiling: A Multi-Omics Mapping Approach using DESI & iTRAQ</a>
-                <br>Brittannie Willis; Harry Whitwell*; Nelofer Syed*; Elizabeth Want*<hr></p>
+                <br>Brittannie Willis; Harry Whitwell*; Nelofer Syed*; Elizabeth Want*<hr>
+                </p>
+              </div>
+              <div id="Shahid" class="column is-6-desktop is-6-tablet">
+                <h1 class="heading-title has-text-left">Shahid's Posters</h1>
+                <!-- <p><a href="AdditionalPages/202607_BSPRPoster_SKR.pdf", target="_blank">BSPR 2026: Using Artificial Intelligence and Deep Neural Machine Learning Networks to Analyse High-Dimensional Datasets Related to Biological Processes in Infection and Inflammation</a>
+                  <br>authors...<hr>
+                </p> -->
               </div>
             </div>
           </section>
           <!-- Brittannie End-->
 
-          <!-- Shahid Start -->
-          <section id="Shahid" class="section introduction is-clearfix">
-            <div class="columns is-variable is-8 is-multiline">
-              <div class="column is-12-desktop is-12-tablet">
-                <h1 class="heading-title has-text-left">Shahid's Posters</h1>
-                <!-- <p><a href="AdditionalPages/202607_BSPRPoster_SKR.pdf", target="_blank">BSPR 2026: Using Artificial Intelligence and Deep Neural Machine Learning Networks to Analyse High-Dimensional Datasets Related to Biological Processes in Infection and Inflammation
-                  <br>authors...<hr>
-</a></p> -->
-              </div>
-            </div>
-          </section>
-          <!-- Shahid End-->
-
           <!-- Rayan Start -->
-          <section id="Rayan" class="section introduction is-clearfix">
-            <div class="columns is-variable is-8 is-multiline">
-              <div class="column is-12-desktop is-12-tablet">
+          <section  class="section introduction is-clearfix">
+            <div class="columns is-variable is-12 is-multiline">
+              <div id="Rayan" class="column is-6-desktop is-6-tablet">
                 <h1 class="heading-title has-text-left">Rayan's Posters</h1>
                 <p><a href="AdditionalPages/202607_BSPRPoster_RA.pdf", target="_blank">BSPR 2026: TME Mediated MTA Metabolism Confers Resistance to MAT2A Inhibition and induces Multi-Omic Reprogramming in MTAP-Deficient Cancer</a>
-                <br>Rayan Alawieh; Chandler Bray; Seyoung Ho; Yutong Lui; Yuxing Xue; Elizabeth Want; Hector Keun; Harry J Whitwell<hr></p>
+                <br>Rayan Alawieh; Chandler Bray; Seyoung Ho; Yutong Lui; Yuxing Xue; Elizabeth Want; Hector Keun; Harry J Whitwell<hr>
+                </p>
               </div>
             </div>
           </section>
